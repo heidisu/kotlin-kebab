@@ -17,7 +17,10 @@ class TreeTests {
 
     @Test
     fun `flipped split flips splits`() =
-        assertEquals(Split(LeftFruit(Pear, Bud), RightFruit(Bud, Apple)), flip(Split(LeftFruit(Apple, Bud), RightFruit(Bud, Pear))))
+        assertEquals(
+            Split(LeftFruit(Pear, Bud), RightFruit(Bud, Apple)),
+            flip(Split(LeftFruit(Apple, Bud), RightFruit(Bud, Pear)))
+        )
 
     @Test
     fun `tree with pears has pears`() =
@@ -29,6 +32,9 @@ class TreeTests {
 
     @Test
     fun `eat pears remove pears from tree`() =
-        assertEquals(Split(LeftFruit(null, Bud), RightFruit(Bud, null)), eatPear(Split(LeftFruit(Pear, Bud), RightFruit(Bud, null))))
+        assertEquals(
+            Split(LeftFruit(null, Bud), RightFruit(Bud, null)),
+            eatPear(Split(LeftFruit(Pear, Bud), RightFruit(Bud, null)))
+        )
 
 }
