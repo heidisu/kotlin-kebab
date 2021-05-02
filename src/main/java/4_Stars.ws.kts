@@ -20,7 +20,7 @@ Triple(Main.Steak, Main.Steak, Main.Steak)
 // (couple more types)
 sealed class Salad {
     object Green : Salad()
-    object Cucmber : Salad()
+    object Cucumber : Salad()
     object Greek : Salad()
 }
 
